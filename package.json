@@ -11,9 +11,14 @@
   "bin": {
     "create-agent-team": "./dist/cli.js"
   },
+  "files": [
+    "dist",
+    "templates"
+  ],
   "scripts": {
     "build": "tsc",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/**/*.test.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
